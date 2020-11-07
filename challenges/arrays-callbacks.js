@@ -77,12 +77,8 @@ console.log(populationTotal);
 */
 
 function consume(a, b, cb){
-  function cb(a, b){
-  };
-  return cb;
+  return cb(a, b);
 };
-
-console.log(consume());
 
 
 /* Step 2: Create several functions to callback with consume();
@@ -104,9 +100,9 @@ function greeting(fname, lname){
 }
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// console.log(consume(2, 2, add)); // 4
-// console.log(consume(10, 16, multiply)); // 160
-// console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+console.log(consume(2, 2, add)); // 4
+console.log(consume(10, 16, multiply)); // 160
+console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
 
