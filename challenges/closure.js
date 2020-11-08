@@ -32,17 +32,15 @@ function summation(num){
 };
 
 // function summation(num){
-//   let counter = 0;
-//   while (num) {
-//     digit = num % 10;
-//     counter += digit;
-//     num = (num - digit) / 10;
+//   for (let i = num - 1; i >= 1; i--){
+//     num *= i;
 //   }
-//   // return counter;
+//   return num;
 // };
+// The above code was written to attempt to get a factorial of the parameter, but that is not what's needed for this function's purpose. 
 
 
-console.log(summation(4));
+console.log(summation(10));
 
 // let counter = [1, 2, 3, 4];
 // let reduceCounter = counter.reduce((a, b) => { return a + b }, 0);
