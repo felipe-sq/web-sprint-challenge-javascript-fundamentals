@@ -23,8 +23,8 @@ myFunction();
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
 
+let counter = [];
 function summation(num){
-  let counter = [];
   counter.push(num);
   let sum = 0;
   sum = counter.reduce((total, numValue) => {return total + numValue});
