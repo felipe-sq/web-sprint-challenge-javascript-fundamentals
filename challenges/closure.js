@@ -31,6 +31,17 @@ function summation(num){
   return sum;
 };
 
+// function summation(num){
+//   let counter = 0;
+//   while (num) {
+//     digit = num % 10;
+//     counter += digit;
+//     num = (num - digit) / 10;
+//   }
+//   // return counter;
+// };
+
+
 console.log(summation(4));
 
 // let counter = [1, 2, 3, 4];
