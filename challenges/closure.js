@@ -17,8 +17,12 @@ function myFunction() {
 myFunction();
 
 // Explanation: 
-
+/* Nested function can access the variable internal because they both exist within the myFunction function. Nested Function will first look within the myFunction code to look for the variable internal; it is within the function in this case, so the variable becomes available to nested function. If nested function was outside the myFunction function, it would not have access to the variable internal. */
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+function summation(){
+
+};
