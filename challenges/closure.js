@@ -23,13 +23,24 @@ myFunction();
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
 
-let counter = [];
+// let counter = [];
+// function summation(num){
+//   counter.push(num);
+//   let sum = 0;
+//   sum = counter.reduce((total, numValue) => {return total + numValue});
+//   return sum;
+// };
+
 function summation(num){
-  counter.push(num);
+  let counter = [];
+  for (let i = 0; i <= num; i++){
+    counter.push(i);
+  }
   let sum = 0;
   sum = counter.reduce((total, numValue) => {return total + numValue});
   return sum;
 };
+
 
 // function summation(num){
 //   for (let i = num - 1; i >= 1; i--){
@@ -40,8 +51,9 @@ function summation(num){
 // The above code was written to attempt to get a factorial of the parameter, but that is not what's needed for this function's purpose. 
 
 
-console.log(summation(10));
+console.log(summation(4));
 
+// The below code was used for testing the .reduce method by itself without /// a function.
 // let counter = [1, 2, 3, 4];
 // let reduceCounter = counter.reduce((a, b) => { return a + b }, 0);
 // console.log(reduceCounter);
