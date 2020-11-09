@@ -27,13 +27,30 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+The .forEach method will execute a function one time for every element in an array. It does not return an new array, therefore, it will need a return on the original array. The .map method is similar, except for the fact that it will create a new array and does not need a return on the original array. 
+
 2. Explain the difference between a callback and a higher order function.
+
+A callback is a function that can be passed into a higher order function as an argument. The purpose of a callback is to have reusable code that can be passed into new/different functions without having to add all the original callback code every time a new function is written. Higher order functions are mainly functions which can take other functions as arguments.
 
 3. What is closure?
 
+Closure is what allows an inner function (function nested within another function) access to it's outer function's scope. This means that an inner function will first search within it's outer functions code for the arguments/parameters that it needs before searching outside of the function. If the arguments/parameters are found within the outer function, then the inner function will accept that code.
+
 4. Describe the four rules of the 'this' keyword.
 
+The four rules of the 'this' keyword are as follows:
+a. Global/window binding: this rule means that 'this' is bound to the window or container object. For example, if you type console.log(this) in a browser console, it will return all the code pertaining to JS which is contained in the browser. 
+
+b. Implicit binding: this rule has to do with the Dot operator. It means that 'this' is bound to whatever object/function is to the left of the Dot operator. 
+
+c. Explicit binding: this rule pertains to being able to manually set what 'this' is bound to, using either .apply, .bind or .call. With explicit binding, 'this' can be set to a specific value.
+
+d. New binding: new binding means that when a new object is created using the 'new' keyword, using 'this' will point to the new object being created with said keyword. For example, with function myFunc(age) { this.age = age;}, 'this' points to any new object that is created using myFunc.
+
 5. Why do we need super() in an extended class?
+
+The reason we need super() in an extended class is because super() allows our code to access/inherit and call the functions from the parent class. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -41,10 +58,10 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [X] Create a forked copy of this project
+- [X] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [X] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
 - [ ] Push commits: git push origin `<firstName-lastName>`
 
 ### Task 2: Project Requirements
@@ -56,7 +73,7 @@ Your finished project must include all of the following requirements:
 #### Task A: Objects and Arrays
 
 Test your knowledge of advanced array methods and callbacks.
-* [ ] Use the [arrays-callbacks.js](challenges/arrays-callbacks.js) link to get started.  Read the instructions carefully!
+* [X] Use the [arrays-callbacks.js](challenges/arrays-callbacks.js) link to get started.  Read the instructions carefully!
 
 #### Task B: Closure
 
@@ -66,12 +83,12 @@ This challenge takes a look at closures as well as scope.
 #### Task C: Prototypes
 
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
+* [X] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
 
 #### Task D: Classes
 
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
-* [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
+* [X] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
